@@ -1,0 +1,127 @@
+{
+  "SQUIRREL": {
+    "name": "청설모",
+    "grade": 1
+  },
+  "MAGPIE": {
+    "name": "까치",
+    "grade": 1
+  },
+  "PUPPY": {
+    "name": "강아지",
+    "grade": 2
+  },
+  "WILD_BOAR": {
+    "name": "멧돼지",
+    "grade": 3
+  },
+  "TIGER": {
+    "name": "호랑이",
+    "grade": 4
+  },
+
+  "BAT": {
+    "name": "박쥐",
+    "grade": 1
+  },
+  "RABBIT": {
+    "name": "토끼",
+    "grade": 1
+  },
+  "CAT": {
+    "name": "고양이",
+    "grade": 2
+  },
+  "DEER": {
+    "name": "사슴",
+    "grade": 2
+  },
+  "LION": {
+    "name": "사자",
+    "grade": 4
+  },
+
+  "QUOKKA": {
+    "name": "쿼카",
+    "grade": 1
+  },
+  "PARROT": {
+    "name": "앵무새",
+    "grade": 1
+  },
+  "OSTRICH": {
+    "name": "타조",
+    "grade": 3
+  },
+  "KOALA": {
+    "name": "코알라",
+    "grade": 2
+  },
+  "KANGAROO": {
+    "name": "캥거루",
+    "grade": 4
+  },
+
+  "HAMSTER": {
+    "name": "햄스터",
+    "grade": 1
+  },
+  "MONKEY": {
+    "name": "원숭이",
+    "grade": 1
+  },
+  "CHICKEN": {
+    "name": "닭",
+    "grade": 2
+  },
+  "PANDA": {
+    "name": "판다",
+    "grade": 2
+  },
+  "COW": {
+    "name": "소",
+    "grade": 4
+  },
+
+  "FOX": {
+    "name": "여우",
+    "grade": 1
+  },
+  "RACCOON": {
+    "name": "너구리",
+    "grade": 1
+  },
+  "EAGLE": {
+    "name": "독수리",
+    "grade": 3
+  },
+  "TURTLE": {
+    "name": "거북이",
+    "grade": 2
+  },
+  "BEAR": {
+    "name": "곰",
+    "grade": 4
+  },
+
+  "AMMONITE": {
+    "name": "암모나이트",
+    "grade": 3
+  },
+  "DODO": {
+    "name": "도도새",
+    "grade": 3
+  },
+  "MAMMOTH": {
+    "name": "맘머스",
+    "grade": 5
+  },
+  "TYRANNOSAURUS": {
+    "name": "티라노",
+    "grade": 5
+  },
+  "DRAGON": {
+    "name": "용",
+    "grade": 5
+  }
+}

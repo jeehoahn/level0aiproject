@@ -1,0 +1,257 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 130023424 bytes for G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3604), pid=18604, tid=31364
+#
+# JRE version:  (21.0.10+8) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (21.0.10+8-LTS-217, mixed mode, emulated-client, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -XX:TieredStopAtLevel=1 -Dfile.encoding=UTF-8 -Duser.country=KR -Duser.language=ko -Duser.variant treasurehunt.TreasureHuntApplication
+
+Host: 12th Gen Intel(R) Core(TM) i7-1255U, 12 cores, 7G,  Windows 11 , 64 bit Build 26100 (10.0.26100.9444)
+Time: Mon Sep 21 22:48:14 2026 elapsed time: 0.159170 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000002be99367da0):  JavaThread "Unknown thread" [_thread_in_vm, id=31364, stack(0x000000fc62000000,0x000000fc62100000) (1024K)]
+
+Stack: [0x000000fc62000000,0x000000fc62100000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x6d0b59]
+V  [jvm.dll+0x85fd56]
+V  [jvm.dll+0x86224e]
+V  [jvm.dll+0x862923]
+V  [jvm.dll+0x282a16]
+V  [jvm.dll+0x6cd405]
+V  [jvm.dll+0x6c1f8a]
+V  [jvm.dll+0x35bcc8]
+V  [jvm.dll+0x363986]
+V  [jvm.dll+0x3b4a3e]
+V  [jvm.dll+0x3b4ce8]
+V  [jvm.dll+0x32f98c]
+V  [jvm.dll+0x3304db]
+V  [jvm.dll+0x829d3e]
+V  [jvm.dll+0x3c19d1]
+V  [jvm.dll+0x812c0a]
+V  [jvm.dll+0x4543d1]
+V  [jvm.dll+0x455e21]
+C  [jli.dll+0x5310]
+C  [ucrtbase.dll+0x2cd30]
+C  [KERNEL32.DLL+0x2cd87]
+C  [ntdll.dll+0xacaec]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ff847fe8c88, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+Total: 0
+
+Other Threads:
+  0x000002be99821940 WorkerThread "GC Thread#0"                     [id=27768, stack(0x000000fc62100000,0x000000fc62200000) (1024K)]
+  0x000002be99832e70 ConcurrentGCThread "G1 Main Marker"            [id=36480, stack(0x000000fc62200000,0x000000fc62300000) (1024K)]
+  0x000002be99836fe0 WorkerThread "G1 Conc#0"                       [id=34072, stack(0x000000fc62300000,0x000000fc62400000) (1024K)]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff847752447]
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007ff84805a010] Heap_lock - owner thread: 0x000002be99367da0
+
+Heap address: 0x0000000084a00000, size: 1974 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 5 size 8 Array Of Cards #cards 12 size 40 Howl #buckets 4 coarsen threshold 1843 Howl Bitmap #cards 512 size 80 coarsen threshold 460 Card regions per heap region 1 cards per card region 2048
+
+Heap:
+ garbage-first heap   total 0K, used 0K [0x0000000084a00000, 0x0000000100000000)
+  region size 1024K, 0 young (0K), 0 survivors (0K)
+
+[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff847b3ac39]
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.048 Loaded shared library C:\Program Files\Java\jdk-21.0.10\bin\java.dll
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+ZGC Phase Switch (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff7050b0000 - 0x00007ff7050c0000 	C:\Program Files\Java\jdk-21.0.10\bin\java.exe
+0x00007ff89e780000 - 0x00007ff89e9e7000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff89d520000 - 0x00007ff89d5eb000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff89bc80000 - 0x00007ff89c082000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff89c340000 - 0x00007ff89c48c000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff886a20000 - 0x00007ff886a39000 	C:\Program Files\Java\jdk-21.0.10\bin\jli.dll
+0x00007ff887990000 - 0x00007ff8879ae000 	C:\Program Files\Java\jdk-21.0.10\bin\VCRUNTIME140.dll
+0x00007ff89dc00000 - 0x00007ff89dcbc000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff89d8d0000 - 0x00007ff89d979000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff89e350000 - 0x00007ff89e3f9000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff89c4b0000 - 0x00007ff89c5c8000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff89e4e0000 - 0x00007ff89e6af000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff89ba30000 - 0x00007ff89ba57000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff89cc40000 - 0x00007ff89cc6b000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff89c210000 - 0x00007ff89c339000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff89b980000 - 0x00007ff89ba23000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff87f080000 - 0x00007ff87f310000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.9278_none_3e0d1ba8e3303201\COMCTL32.dll
+0x00007ff87f4b0000 - 0x00007ff87f4bb000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff89dbc0000 - 0x00007ff89dbf1000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ff8980e0000 - 0x00007ff8980ec000 	C:\Program Files\Java\jdk-21.0.10\bin\vcruntime140_1.dll
+0x00007ff851b70000 - 0x00007ff851bfd000 	C:\Program Files\Java\jdk-21.0.10\bin\msvcp140.dll
+0x00007ff847410000 - 0x00007ff848137000 	C:\Program Files\Java\jdk-21.0.10\bin\server\jvm.dll
+0x00007ff89d980000 - 0x00007ff89da00000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff89b7e0000 - 0x00007ff89b83e000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007ff883e70000 - 0x00007ff883ea6000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff89b7c0000 - 0x00007ff89b7d5000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007ff89a5b0000 - 0x00007ff89a5cb000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ff896120000 - 0x00007ff89612a000 	C:\Program Files\Java\jdk-21.0.10\bin\jimage.dll
+0x00007ff898ed0000 - 0x00007ff89911c000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ff89df00000 - 0x00007ff89e285000 	C:\WINDOWS\System32\combase.dll
+0x00007ff89e400000 - 0x00007ff89e4d9000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ff885300000 - 0x00007ff88533b000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ff89c150000 - 0x00007ff89c1fc000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ff87f380000 - 0x00007ff87f3a1000 	C:\Program Files\Java\jdk-21.0.10\bin\java.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-21.0.10\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.9278_none_3e0d1ba8e3303201;C:\Program Files\Java\jdk-21.0.10\bin\server
+
+VM Arguments:
+jvm_args: -XX:TieredStopAtLevel=1 -Dfile.encoding=UTF-8 -Duser.country=KR -Duser.language=ko -Duser.variant 
+java_command: treasurehunt.TreasureHuntApplication
+java_class_path (initial): C:\25 Treasure Hunt\build\classes\java\main;C:\25 Treasure Hunt\build\resources\main;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.18.2\7b6ff96adf421f4c6edbd694e797dd8fe434510a\jackson-datatype-jsr310-2.18.2.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.18.2\985d77751ebc7fce5db115a986bc9aa82f973f4a\jackson-annotations-2.18.2.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.18.2\9ed6d538ebcc66864e114a7040953dce6ab6ea53\jackson-datatype-jdk8-2.18.2.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.module\jackson-module-parameter-names\2.18.2\72960cb3277347a748911d100c3302d60e8a616a\jackson-module-parameter-names-2.18.2.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.18.2\fb64ccac5c27dca8819418eb4e443a9f496d9ee7\jackson-core-2.18.2.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.18.2\deef8697b92141fb6caf7aa86966cff4eec9b04f\jackson-databind-2.18.2.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.springframework\spring-webmvc\6.2.3\485f6e351bba471fc8f841f39eaf6488896369ff\spring-webmvc-6.2.3.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.springframework\spring-websocket\6.2.3\77eba51cffe04c7e8abca5a37b29675415b5794a\spring-websocket-6.2.3.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.springframework\spring-web\6.2.3\662ac5ee41af27d183f97032b2fec2b652d379f5\spring-web-6.2.3.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.springframework\spring-messaging\6.2.3\4351508e86d19ca4682762bbfd72182e39ac16c5\spring-messaging-6.2.3.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-autoconfigure\3.4.3\6172c599082196b340910d67c5c790c32f10e417\spring-boot-autoconfigure-3.4.3.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot\3.4.3\a7138bcecd59ed27660b3894a7812d65db4951e6\spring-boot-3.4.3.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\jakarta.annotation\jakarta.annotation-api\2.1.1\48b9bda22b091b1f48b13af03fe36db3be6e1ae3\jakarta.annotation-api-2.1.1.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.springframework\spring-context\6.2.3\35acadc000b8aaff77e3412dd9acb51aa70c8515\spring-context-6.2.3.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.springframework\spring-aop\6.2.3\7983418fa64505d144b60826fb1352ad336c60a0\spring-aop-6.2.3.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.springframework\spring-beans\6.2.3\de660324c90e9b015886d85c746860478fa7d99c\spring-beans-6.2.3.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.springframework\spring-expression\6.2.3\bda43c7be1bb69cce2a380c2bbaf05062631d42d\spring-expression-6.2.3.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.springframework\spring-core\6.2.3\13ec11e345b915d7ceea37446f1b1eefdcaad62c\spring-core-6.2.3.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.yaml\snakeyaml\2.3\936b36210e27320f920536f695cf1af210c44586\snakeyaml-2.3.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-websocket\10.1.36\222960bc8895aa543e405382094c7fb118544d0d\tomcat-embed-websocket-10.1.36.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-core\10.1.36\3ccaa558e32e317e35d6674d65d7d9aa182e082f\tomcat-embed-core-10.1.36.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-el\10.1.36\4e4235a18244af30bb32d9b5a9400fb8edb3bc20\tomcat-embed-el-10.1.36.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\io.micrometer\micrometer-observation\1.14.4\c17efe9e6695a0a849a95d0e77422516a345e779\micrometer-observation-1.14.4.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-classic\1.5.16\113979db51dfad6dc895b34460d7b7ff64ffe7d2\logback-classic-1.5.16.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-to-slf4j\2.24.3\da1143e2a2531ee1c2d90baa98eb50a28a39d5a7\log4j-to-slf4j-2.24.3.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.slf4j\jul-to-slf4j\2.0.16\6d57da3e961daac65bcca0dd3def6cd11e48a24a\jul-to-slf4j-2.0.16.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.springframework\spring-jcl\6.2.3\ce8bf55aa240fdeab07b3da1f462c79112a33aff\spring-jcl-6.2.3.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\io.micrometer\micrometer-commons\1.14.4\3664f95586514d8f9adc81a5f7a5ef9f66b65599\micrometer-commons-1.14.4.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-core\1.5.16\4f17700f046900aea2fadf115e2d67fec921f7fd\logback-core-1.5.16.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\2.0.16\172931663a09a1fa515567af5fbef00897d3c04\slf4j-api-2.0.16.jar;C:\Users\jeeho\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.24.3\b02c125db8b6d295adf72ae6e71af5d83bce2370\log4j-api-2.24.3.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 3                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 10                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 130023424                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 2069889024                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 4096                                   {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 0                                      {pd product} {ergonomic}
+     bool ProfileInterpreter                       = false                                  {pd product} {command line}
+    uintx ProfiledCodeHeapSize                     = 0                                      {pd product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 2069889024                             {manageable} {ergonomic}
+     intx TieredStopAtLevel                        = 1                                         {product} {command line}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-21.0.10
+CLASSPATH=C:\25 Treasure Hunt\\gradle\wrapper\gradle-wrapper.jar
+PATH=C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NAT Service;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-21.0.10\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\jeeho\.local\bin;C:\Users\jeeho\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\jeeho\AppData\Local\Programs\Python\Python313\;C:\Users\jeeho\AppData\Local\Programs\Python\Launcher\;C:\Users\jeeho\AppData\Local\Microsoft\WindowsApps;C:\Users\jeeho\AppData\Local\Python\bin;C:\Users\jeeho\AppData\Local\SOOP;C:\Users\jeeho\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jeeho\AppData\Local\GitHubDesktop\bin;C:\Users\jeeho\.dotnet\tools;c:\Users\jeeho\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts
+USERNAME=jeeho
+LANG=en_US.UTF-8
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 154 Stepping 4, GenuineIntel
+TMP=C:\Users\jeeho\AppData\Local\Temp
+TEMP=C:\Users\jeeho\AppData\Local\Temp
+
+
+
+
+Periodic native trim disabled
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 26100 (10.0.26100.9444)
+OS uptime: 1 days 5:22 hours
+Hyper-V role detected
+
+CPU: total 12 (initial active 12) (6 cores per cpu, 2 threads per core) family 6 model 154 stepping 4 microcode 0x423, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, erms, clmul, bmi1, bmi2, adx, sha, fma, vzeroupper, clflush, clflushopt, clwb, hv, serialize, rdtscp, rdpid, fsrm, f16c, cet_ibt, cet_ss
+Processor Information for processor 0
+  Max Mhz: 1700, Current Mhz: 1700, Mhz Limit: 1700
+Processor Information for processor 1
+  Max Mhz: 1700, Current Mhz: 1700, Mhz Limit: 1700
+Processor Information for processor 2
+  Max Mhz: 1700, Current Mhz: 1700, Mhz Limit: 1700
+Processor Information for processor 3
+  Max Mhz: 1700, Current Mhz: 1700, Mhz Limit: 1700
+Processor Information for processor 4
+  Max Mhz: 1700, Current Mhz: 1200, Mhz Limit: 1190
+Processor Information for processor 5
+  Max Mhz: 1700, Current Mhz: 1200, Mhz Limit: 1190
+Processor Information for processor 6
+  Max Mhz: 1700, Current Mhz: 1200, Mhz Limit: 1190
+Processor Information for processor 7
+  Max Mhz: 1700, Current Mhz: 1200, Mhz Limit: 1190
+Processor Information for processor 8
+  Max Mhz: 1700, Current Mhz: 1200, Mhz Limit: 1190
+Processor Information for processor 9
+  Max Mhz: 1700, Current Mhz: 1200, Mhz Limit: 1190
+Processor Information for processor 10
+  Max Mhz: 1700, Current Mhz: 1200, Mhz Limit: 1190
+Processor Information for processor 11
+  Max Mhz: 1700, Current Mhz: 1200, Mhz Limit: 1190
+
+Memory: 4k page, system-wide physical 7893M (186M free)
+TotalPageFile size 32469M (AvailPageFile size 55M)
+current process WorkingSet (physical memory assigned to process): 13M, peak: 13M
+current process commit charge ("private bytes"): 59M, peak: 183M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (21.0.10+8-LTS-217) for windows-amd64 JRE (21.0.10+8-LTS-217), built on 2025-12-18T14:59:28Z by "mach5run" with MS VC++ 17.13 (VS2022)
+
+END.

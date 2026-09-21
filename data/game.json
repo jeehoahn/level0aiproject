@@ -1,0 +1,26 @@
+{
+  "boardSize": 5,
+  "maxExploration": 10,
+
+  "startingGold": 100,
+
+  "bomb": {
+    "startingCount": 2,
+    "additionalCountInterval": 3,
+    "maxCount": 10
+  },
+
+  "targetAnimals": {
+    "startingCount": 3,
+    "additionalCountInterval": 5,
+    "maxCount": 5
+  },
+
+  "animalReward": 5,
+
+  "moneyCell": {
+    "probability": 30,
+    "minReward": 1,
+    "maxReward": 10
+  }
+}

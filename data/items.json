@@ -1,0 +1,48 @@
+{
+  "FIST": {
+    "name": "주먹",
+    "type": "WEAPON",
+    "price": 0,
+    "maxGrade": 1,
+    "consumable": false
+  },
+
+  "KNIFE": {
+    "name": "칼",
+    "type": "WEAPON",
+    "price": 100,
+    "maxGrade": 2,
+    "consumable": true
+  },
+
+  "BOW": {
+    "name": "활",
+    "type": "WEAPON",
+    "price": 300,
+    "maxGrade": 3,
+    "consumable": true
+  },
+
+  "GUN": {
+    "name": "총",
+    "type": "WEAPON",
+    "price": 1000,
+    "maxGrade": 4,
+    "consumable": true
+  },
+
+  "TELESCOPE": {
+    "name": "망원경",
+    "type": "UTILITY",
+    "price": 500,
+    "consumable": true
+  },
+
+  "NUKE": {
+    "name": "핵",
+    "type": "WEAPON",
+    "price": 5000,
+    "maxGrade": 5,
+    "consumable": true
+  }
+}

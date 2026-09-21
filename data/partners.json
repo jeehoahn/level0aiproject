@@ -1,0 +1,211 @@
+{
+  "MAGPIE": {
+    "name": "까치",
+    "grade": 1,
+
+    "levelUpConditions": {
+      "level2": {
+        "captureCount": 10
+      },
+      "level3": {
+        "captureCount": 100
+      }
+    },
+
+    "levels": {
+      "1": {
+        "ability": {
+          "type": "GOLD_MULTIPLIER",
+          "value": 10
+        }
+      },
+      "2": {
+        "ability": {
+          "type": "GOLD_MULTIPLIER",
+          "value": 15
+        }
+      },
+      "3": {
+        "ability": {
+          "type": "GOLD_MULTIPLIER",
+          "value": 20
+        }
+      }
+    }
+  },
+
+  "TIGER": {
+    "name": "호랑이",
+    "grade": 2,
+
+    "levelUpConditions": {
+      "level2": {
+        "captureCount": 20
+      },
+      "level3": {
+        "captureCount": 150
+      }
+    },
+
+    "levels": {
+      "1": {
+        "ability": {
+          "type": "FREE_TELESCOPE",
+          "value": 2
+        }
+      },
+      "2": {
+        "ability": {
+          "type": "FREE_TELESCOPE",
+          "value": 3
+        }
+      },
+      "3": {
+        "ability": {
+          "type": "FREE_TELESCOPE",
+          "value": 5
+        }
+      }
+    }
+  },
+
+  "LION": {
+    "name": "사자",
+    "grade": 3,
+
+    "levelUpConditions": {
+      "level2": {
+        "captureCount": 20
+      },
+      "level3": {
+        "captureCount": 150
+      }
+    },
+
+    "levels": {
+      "1": {
+        "ability": {
+          "type": "WEAPON_LEVEL_UP",
+          "value": 1
+        }
+      },
+      "2": {
+        "ability": {
+          "type": "WEAPON_LEVEL_UP",
+          "value": 2
+        }
+      },
+      "3": {
+        "ability": {
+          "type": "WEAPON_LEVEL_UP",
+          "value": 3
+        }
+      }
+    }
+  },
+
+  "BEAR": {
+    "name": "곰",
+    "grade": 4,
+
+    "levelUpConditions": {
+      "level2": {
+        "captureCount": 50
+      },
+      "level3": {
+        "captureCount": 200
+      }
+    },
+
+    "levels": {
+      "1": {
+        "ability": {
+          "type": "WEAPON_LEVEL_UP",
+          "value": 1
+        }
+      },
+      "2": {
+        "ability": {
+          "type": "WEAPON_LEVEL_UP",
+          "value": 2
+        }
+      },
+      "3": {
+        "ability": {
+          "type": "WEAPON_LEVEL_UP",
+          "value": 3
+        }
+      }
+    }
+  },
+
+  "COW": {
+    "name": "소",
+    "grade": 5,
+
+    "levelUpConditions": {
+      "level2": {
+        "captureCount": 100
+      },
+      "level3": {
+        "captureCount": 500
+      }
+    },
+
+    "levels": {
+      "1": {
+        "ability": {
+          "type": "EXPLORATION_BONUS",
+          "value": 3
+        }
+      },
+      "2": {
+        "ability": {
+          "type": "EXPLORATION_BONUS",
+          "value": 5
+        }
+      },
+      "3": {
+        "ability": {
+          "type": "EXPLORATION_BONUS",
+          "value": 8
+        }
+      }
+    }
+  },
+
+  "KANGAROO": {
+    "name": "캥거루",
+    "grade": 1,
+
+    "levelUpConditions": {
+      "level2": {
+        "captureCount": 10
+      },
+      "level3": {
+        "captureCount": 100
+      }
+    },
+
+    "levels": {
+      "1": {
+        "ability": {
+          "type": "BOMB_GUARD",
+          "value": 1
+        }
+      },
+      "2": {
+        "ability": {
+          "type": "BOMB_GUARD",
+          "value": 2
+        }
+      },
+      "3": {
+        "ability": {
+          "type": "BOMB_GUARD",
+          "value": 3
+        }
+      }
+    }
+  }
+}
